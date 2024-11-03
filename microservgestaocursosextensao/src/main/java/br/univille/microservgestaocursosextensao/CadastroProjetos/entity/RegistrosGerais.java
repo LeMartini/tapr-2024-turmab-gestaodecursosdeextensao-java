@@ -1,18 +1,19 @@
 package br.univille.microservgestaocursosextensao.CadastroProjetos.entity;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 public class RegistrosGerais {
 
-    private String idProjetoRegistros;
+    private UUID idProjetoRegistros;
     private LocalDateTime datUltimaAtualizacao;
     private String descricaoRegistroString;
 
-    public String getIdProjetoRegistros() {
+    public UUID getIdProjetoRegistros() {
         return idProjetoRegistros;
     }
 
-    public void setIdProjetoRegistros(String idProjetoRegistros) {
+    public void setIdProjetoRegistros(UUID idProjetoRegistros) {
         this.idProjetoRegistros = idProjetoRegistros;
     }
 

@@ -1,19 +1,20 @@
 package br.univille.microservgestaocursosextensao.CadastroProjetos.entity;
 
 import java.time.LocalDate;
+import java.util.UUID;
 
 public class StatusProjeto {
-    private String idEtapa;
+    private UUID idEtapa;
     private String descricao;
     private LocalDate dataInicio;
     private LocalDate dataFim;
     private String status;
 
-    public String getIdEtapa() {
+    public UUID getIdEtapa() {
         return idEtapa;
     }
 
-    public void setIdEtapa(String idEtapa) {
+    public void setIdEtapa(UUID idEtapa) {
         this.idEtapa = idEtapa;
     }
 
