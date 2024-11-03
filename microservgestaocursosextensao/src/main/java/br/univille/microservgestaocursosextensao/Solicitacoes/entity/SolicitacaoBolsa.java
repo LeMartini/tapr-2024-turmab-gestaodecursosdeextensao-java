@@ -1,26 +1,27 @@
 package br.univille.microservgestaocursosextensao.Solicitacoes.entity;
 
 import java.time.LocalDate;
+import java.util.UUID;
 
 public class SolicitacaoBolsa {
-    private String idSolicitacao;
-    private String idProjeto;
+    private UUID idSolicitacao;
+    private UUID idProjeto;
     private LocalDate dataSolicitacao;
     private String statusSolicitacao;
 
-    public String getIdSolicitacao() {
+    public UUID getIdSolicitacao() {
         return idSolicitacao;
     }
 
-    public void setIdSolicitacao(String idSolicitacao) {
+    public void setIdSolicitacao(UUID idSolicitacao) {
         this.idSolicitacao = idSolicitacao;
     }
 
-    public String getIdProjeto() {
+    public UUID getIdProjeto() {
         return idProjeto;
     }
 
-    public void setIdProjeto(String idProjeto) {
+    public void setIdProjeto(UUID idProjeto) {
         this.idProjeto = idProjeto;
     }
 

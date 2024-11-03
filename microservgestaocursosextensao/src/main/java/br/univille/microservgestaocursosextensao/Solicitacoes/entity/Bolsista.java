@@ -1,27 +1,29 @@
 package br.univille.microservgestaocursosextensao.Solicitacoes.entity;
 
+import java.util.UUID;
+
 public class Bolsista {
 
-    private String idBolsista;
-    private String idSolicitacao;
+    private UUID idBolsista;
+    private UUID idSolicitacao;
     private String nome;
     private String matricula;
     private String curso;
     private String statusMatricula;
 
-    public String getIdBolsista() {
+    public UUID getIdBolsista() {
         return idBolsista;
     }
 
-    public void setIdBolsista(String idBolsista) {
+    public void setIdBolsista(UUID idBolsista) {
         this.idBolsista = idBolsista;
     }
 
-    public String getIdSolicitacao() {
+    public UUID getIdSolicitacao() {
         return idSolicitacao;
     }
 
-    public void setIdSolicitacao(String idSolicitacao) {
+    public void setIdSolicitacao(UUID idSolicitacao) {
         this.idSolicitacao = idSolicitacao;
     }
 
