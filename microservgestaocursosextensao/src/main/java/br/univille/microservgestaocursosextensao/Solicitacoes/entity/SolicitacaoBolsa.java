@@ -3,6 +3,9 @@ package br.univille.microservgestaocursosextensao.Solicitacoes.entity;
 import java.time.LocalDate;
 import java.util.UUID;
 
+import com.azure.spring.data.cosmos.core.mapping.Container;
+
+@Container(containerName = "solicitacaoBolsa", autoCreateContainer = true)
 public class SolicitacaoBolsa {
     private UUID idSolicitacao;
     private UUID idProjeto;
