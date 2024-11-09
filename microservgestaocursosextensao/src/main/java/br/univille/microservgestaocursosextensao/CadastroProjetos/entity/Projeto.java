@@ -15,18 +15,18 @@ public class Projeto {
     @Id
     @PartitionKey
     @GeneratedValue
-    private UUID idProjeto;
+    private String id;
     private String nome;
     private LocalDate dataInicio;
     private String tema;
     private String status;
 
-    public UUID getIdProjeto() {
-        return idProjeto;
+    public String getIdProjeto() {
+        return id;
     }
 
-    public void setIdProjeto(UUID idProjeto) {
-        this.idProjeto = idProjeto;
+    public void setIdProjeto(String id) {
+        this.id = id;
     }
 
     public String getNome() {
